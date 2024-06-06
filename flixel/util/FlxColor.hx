@@ -60,7 +60,7 @@ abstract FlxColor(Int) from Int from UInt to Int to UInt
 	 */
 	public var rgb(get, set):FlxColor;
 
-	/** 
+	/**
 	 * The hue of the color in degrees (from 0 to 359)
 	 */
 	public var hue(get, set):Float;
@@ -584,22 +584,22 @@ abstract FlxColor(Int) from Int from UInt to Int to UInt
 		#end
 	}
 
-	inline function get_red():Int
+	inline function get_red():FlxColorInt
 	{
 		return (getThis() >> 16) & 0xff;
 	}
 
-	inline function get_green():Int
+	inline function get_green():FlxColorInt
 	{
 		return (getThis() >> 8) & 0xff;
 	}
 
-	inline function get_blue():Int
+	inline function get_blue():FlxColorInt
 	{
 		return getThis() & 0xff;
 	}
 
-	inline function get_alpha():Int
+	inline function get_alpha():FlxColorInt
 	{
 		return (getThis() >> 24) & 0xff;
 	}
